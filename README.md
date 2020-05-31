@@ -1,13 +1,15 @@
-# Angular 9 Fundamentals Workshop
+# Angular 9 Fundamentals
 
-## Getting Started
+1. This project uses json-server to serve as backend.
 
-```
-npm install -g @angular/cli@9.1
-```
+1. To run this project.
 
-```
+```bash
 npm install
+
+npm run server:all
 ```
 
-[Workshop Slides](/Angular_9_Fundamentals.pdf)
+## Http communication practice with RxJS.
+
+1. We need to use HTTPClientModule from @angular/common/http for consuming rest services from angular app.
