@@ -6,6 +6,27 @@
       "description": "Learn the fundamentals of Angular 9",
       "percentComplete": 26,
       "favorite": true
+    },
+    {
+      "id": 2,
+      "title": "Reactv16",
+      "description": "Full react basic course",
+      "percentComplete": 41,
+      "favorite": false
+    }
+  ],
+  "posts": [
+    {
+      "id": 2,
+      "title": "Sample Title",
+      "description": "Sample description",
+      "comments": [
+        {
+          "id": 1,
+          "userName": "han",
+          "comment": "Good one!!"
+        }
+      ]
     }
   ]
 }
