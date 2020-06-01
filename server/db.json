@@ -17,14 +17,28 @@
   ],
   "posts": [
     {
-      "id": 2,
-      "title": "Sample Title",
+      "_id": 2,
+      "post_title": "Sample Title",
       "description": "Sample description",
+      "user_name": "Harish Kumar",
       "comments": [
         {
-          "id": 1,
-          "userName": "han",
+          "_id": 1,
+          "user_name": "han",
           "comment": "Good one!!"
+        }
+      ]
+    },
+    {
+      "_id": 3,
+      "post_title": "Angular Topics",
+      "description": "Topics for HTTP communication",
+      "user_name": "Hans",
+      "comments": [
+        {
+          "_id": 1,
+          "user_name": "ghk",
+          "comment": "Good Post!!"
         }
       ]
     }

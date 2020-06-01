@@ -6,7 +6,9 @@ import { Post } from '../shared/interfaces/post.interface';
 
 const POSTS_URL = 'posts';
 
-@Injectable({ providedIn: 'root' })
+@Injectable({
+  providedIn: 'root'
+})
 export class PostsService {
   constructor(private httpService: HttpClientService) { }
 
