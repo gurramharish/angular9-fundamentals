@@ -17,26 +17,26 @@
   ],
   "posts": [
     {
-      "_id": 2,
+      "post_id": 2,
       "post_title": "Sample Title",
       "description": "Sample description",
       "user_name": "Harish Kumar",
       "comments": [
         {
-          "_id": 1,
+          "cmnt_id": 1,
           "user_name": "han",
           "comment": "Good one!!"
         }
       ]
     },
     {
-      "_id": 3,
+      "post_id": 3,
       "post_title": "Angular Topics",
       "description": "Topics for HTTP communication",
       "user_name": "Hans",
       "comments": [
         {
-          "_id": 1,
+          "cmnt_id": 1,
           "user_name": "ghk",
           "comment": "Good Post!!"
         }

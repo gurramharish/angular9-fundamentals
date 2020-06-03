@@ -1,4 +1,4 @@
 export enum TransformType {
-  UNDERSCORE,
-  RENAME
+  UNDERSCORE = 'Underscore',
+  RENAME = 'Rename'
 }
