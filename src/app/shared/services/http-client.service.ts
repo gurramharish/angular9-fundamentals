@@ -23,7 +23,6 @@ export class HttpClientService {
   }
 
   transformResponse<T>(response, config) {
-    console.log('Response before transforming :: ', response);
     if (config) {
       const convertedResponse = this.transformService.transform<T>(response, config);
       console.log(`Converted response using ${config.type} strategry :: `, convertedResponse);

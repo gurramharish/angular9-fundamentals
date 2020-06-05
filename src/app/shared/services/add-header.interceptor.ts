@@ -7,10 +7,10 @@ export class AddHeaderInterceptor implements HttpInterceptor {
   constructor() { }
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    console.log('Add headers interceptor :: ', req);
-    const headers = req.headers
-      .set('Content-Type', 'application/json');
-    const authReq = req.clone({ headers });
-    return next.handle(authReq);
+    console.log(`AddHeaderInterceptor - ${req.url}`);
+    const jsonReq: HttpRequest<any> = req.clone({
+      setHeaders: { 'Content-Type': 'application/json' }
+    });
+    return next.handle(jsonReq);
   }
 }

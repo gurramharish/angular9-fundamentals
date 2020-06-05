@@ -10,6 +10,7 @@ import { MaterialModule } from './material.module';
 import { AuthService } from './shared/services/auth.service';
 import { NotificationService } from './shared/services/notification.service';
 import { AddHeaderInterceptor } from './shared/services/add-header.interceptor';
+import { LogResponseInteceptor } from './shared/services/log-response.interceptor';
 
 @NgModule({
   imports: [
@@ -27,6 +28,11 @@ import { AddHeaderInterceptor } from './shared/services/add-header.interceptor';
       provide: HTTP_INTERCEPTORS,
       useClass: AddHeaderInterceptor,
       multi: true,
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: LogResponseInteceptor,
+      multi: true
     }
   ],
   bootstrap: [AppComponent],
